@@ -1,21 +1,23 @@
-Okay I need to start a true readme in here
+# Metadata-Guided Pose Recovery
 
-Basically:
+## Overview
+This repository contains the mobile and interactive component of the 3D reconstruction framework. It provides a real-time graphical environment for visualizing, editing, and validating camera poses derived from compromised or incomplete sensor metadata.
 
-main.cpp  starts up a QApplication, Open glWidget window. Then defines all the widgets and conrtols Layout and writes the logic of the interface. Instantiate object, fill it in, connect to right gl widget calls and singals for updating objects/data and calling update and render with paint and all. and interatcion between them. some startup stuff
+## Core Architecture
+* **`main.cpp`**: Initializes the `QApplication` and defines the primary graphical window. It establishes the widget layout, controls, and the logic for the interactive interface. This file is responsible for instantiating core objects and connecting signals/slots to ensure data updates trigger immediate rendering in the OpenGL viewport.
+* **`gl_widget`**: Acts as the primary support system for the main application, managing data feeders and handlers. It communicates directly with shader files and implements the `paint()` function to execute OpenGL-based graphics. It utilizes Vertex Buffer Objects (VBO), Vertex Array Objects (VAO), and transformation matrices to render frustums, rays, and point clouds.
 
-gl widget: support stuff for main. feeders and data handlers and generators. talking to the shader files and paint() for correct graphics --VBO and VAO + matrices -> OpenGl = graphics--
-.h is the header
+## Project Components
+* **Header Files (`.h`)**: Define the interfaces, data structures, and class definitions for the GUI and rendering engine.
+* **Shader Programs**: Implement the rendering pipeline for efficient visualization of computational geometry and image projections.
+* **Data & Preprocessing**: Includes raw sensor data and modules to transform GPS/INS inputs into unified coordinate frames (e.g., ECEF or ENU) using the WGS84 ellipsoid.
 
-some shader stuff for rendering
+## Usage Instructions
+1. **Interaction**: Use the interface spinboxes to manually manipulate intrinsic and extrinsic matrices for real-time pose adjustment.
+2. **Validation**: Project image frames and render sparse point clouds to inspect spatial alignment and consistency.
+3. **Inference**: Trigger the pose-hypothesis generation to algorithmically hunt for correct sensor orientations from ambiguous metadata.
 
-data files and preprocessing
-
-
-
-On top of that:
-maker/installer thing
-User instructions
-map of signals
-
-needs a general health checkup
+## Map of Signals
+* **Data Updates**: Signals sent from preprocessing or data generators to trigger object updates.
+* **Rendering Calls**: Connections between widget interactions and `paint()`/`update()` calls in the OpenGL context.
+* **UI Controls**: Logical links between button/spinbox inputs and matrix transformations.
