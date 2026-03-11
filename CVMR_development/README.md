@@ -21,3 +21,10 @@ This repository contains the mobile and interactive component of the 3D reconstr
 * **Data Updates**: Signals sent from preprocessing or data generators to trigger object updates.
 * **Rendering Calls**: Connections between widget interactions and `paint()`/`update()` calls in the OpenGL context.
 * **UI Controls**: Logical links between button/spinbox inputs and matrix transformations.
+
+* Questions?: wffarthing@gmail.com
+
+This research was supported in part by an appointment to the Department of Defense (DOD) Research Participation Program
+administered by the Oak Ridge Institute for Science and Education (ORISE) through an interagency agreement between the U.S.
+Department of Energy (DOE) and the DOD. ORISE is managed by ORAU under DOE contract number DE-SC0014664. All opinions
+expressed in this paper are the author's and do not necessarily reflect the policies and views of DOD, DOE, or ORAU/ORISE.
