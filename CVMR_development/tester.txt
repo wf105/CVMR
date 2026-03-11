@@ -1,0 +1,22 @@
+1 0 0 2 0 1 0 4 0 0 1 1 0 0 0 1
+1 0 0 2 0 1 0 2 0 0 1 7 0 0 0 1
+7 4 6 2 0 6 2 3 0 6 0 7 3 3 6 0
+6 8 3 0 2 0 0 6 3 1 1 3 5 9 0 0
+mwahahahahah I have image capabiulity know
+OK SO: FIX gui capabilities
+        Get  a health checkup
+
+Then bundle on images
+Logic refactoring
+
+SLAM?!thwd fgyiyetchessgameasadndsfffdthaenteenergreatlol
+
+
+ok so what I got is:
+images projected
+I think it need to store projection
+then it need to calculate the reprojection error
+then it need to update 
+and loop
+
+good data storine!!!

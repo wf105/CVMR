@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+3f624c797483831b92205625b2a25d6c CMakeFiles/CameraFrustums_autogen
+3f624c797483831b92205625b2a25d6c CMakeFiles/CameraFrustums_autogen_timestamp_deps
+cd8b333a927ca6d11b2dc1e712d5d4ab CameraFrustums_autogen/timestamp
